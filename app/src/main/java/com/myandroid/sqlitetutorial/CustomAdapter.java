@@ -22,6 +22,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     private Activity activity;
     private ArrayList book_id, book_title, book_author, book_pages;
 
+    Animation translate_anim;
+
     CustomAdapter(Activity activity, Context context, ArrayList book_id, ArrayList book_title, ArrayList book_author, ArrayList book_pages) {
         this.activity = activity;
         this.context = context;
@@ -76,6 +78,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             book_pages_txt = itemView.findViewById(R.id.book_pages_txt);
 
             mainLayout = itemView.findViewById(R.id.mainLayout);
+
+            translate_anim = AnimationUtils.loadAnimation(context, R.anim.translate_anim);
+            mainLayout.setAnimation(translate_anim);
         }
     }
 }
