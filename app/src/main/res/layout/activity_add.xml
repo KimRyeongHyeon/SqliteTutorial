@@ -7,17 +7,17 @@ android:layout_height="match_parent"
 tools:context=".AddActivity"
 android:padding="30dp">
 
-<EditText
-    android:id="@+id/title_input"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="150dp"
-    android:ems="10"
-    android:hint="Book Title"
-    android:inputType="textPersonName"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/title_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Book Title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 <EditText
     android:id="@+id/author_input"
